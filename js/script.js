@@ -63,6 +63,9 @@ let forecastData = null;
 
 // Inicialização
 document.addEventListener("DOMContentLoaded", () => {
+  // Configurar datalist para cidades de SP
+  setupCityDatalist();
+
   // Verificar tema salvo
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-theme");
